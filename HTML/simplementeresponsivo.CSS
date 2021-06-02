@@ -1,0 +1,38 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .header {
+        background-color: #b3b3b3;
+        border: 1px solid coral;
+        margin: 6px 0px;
+    }
+    
+    .main {
+        background-color: #cccccc;
+        border: 1px solid coral;
+        margin: 6px 0px;
+    }
+    
+    #footer {
+        background-color: #ffff9a;
+        border: 1px solid coral;
+        margin: 6px 0px;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-with: 480px) {
+        .desktop {
+            display: none;
+        }
+    }
+    
+    @media only screen and (min-width:481px) {
+        .phone {
+            display: none;
+        }
+    }

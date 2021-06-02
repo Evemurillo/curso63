@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <style></style>
+    <script>
+        console.log("Fundamentos basicos JavaScript")
+            /*Obten del 1 al 255*/
+            //Escribe una función que devuelve un array con todos los números del 1 al 255.//
+
+
+        function de1a255() {
+            var array = []; //arreglo vacio;
+            //array.length; array.push() y array.pop()
+            for (var i = 1; i <= 255; i++)[]
+        }
+
+        function paresHasta1000() {
+            var sumaPares = 0;
+            /*sumaPares=sumaPares + algo-> ir acumulando
+            i++-> i=i +1
+            operador de modulo->resto de dividir un numeto por otro
+            if (numero % 2 == 0)
+
+            4/2=2 (resti=0); 5/2=2 (resto=1); 1002=50 (resto=0) -4/2=-2(resto =0)*/
+
+            for (var i = 1; i <= 1000; i++) {
+
+                if (i % 2 == 0) {
+                    sumaPares = sumaPares + i; //6
+                }
+            }
+            retur sumaPares;
+        }
+        console.log("suma total" + paresHasta1000())
+
+        function sumaImparesHasta5000() {
+            var sumaImpares = 0;
+            for (var i = 1; i <= 5000; i++) {
+                if (i % 2 != 0) { //si es impar
+                    sumaImpares = sumaImpares + i; //acumulando
+                }
+            }
+            return sumaImpares
+        }
+        console.log("suma impares: " + sumaImparesHasta5000()); //6250000
+    </script>

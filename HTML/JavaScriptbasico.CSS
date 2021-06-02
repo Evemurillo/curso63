@@ -1,0 +1,89 @@
+/*CSS reset settings here*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 980px;
+    height: 810px;
+    background-color: #1b345d;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding: 15px;
+}
+
+#header {
+    width: 970px;
+    height: 70px;
+    background-color: #cc323b;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 15px 15px 10px;
+    color: #c3d6eb;
+}
+
+#navigation {
+    width: 160px;
+    background-color: rgb(39, 114, 126);
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#navigation ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+a {
+    color: rgb(106, 213, 234);
+}
+
+#home {
+    margin-left: 20px;
+}
+
+#main_content {
+    min-height: 370px;
+    width: 740px;
+    background-color: rgb(14, 24, 33);
+    color: #c3d6eb;
+    font-family: letra java;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+#footer {
+    min-height: 25px;
+    width: 945px;
+    background-color: rgb(94, 102, 114);
+    color: rgb(194, 194, 214);
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+span {
+    color: blue;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+ul {
+    margin: 15px;
+}

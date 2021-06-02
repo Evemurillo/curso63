@@ -1,0 +1,22 @@
+/*CSS reset settings here*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 919px;
+    height: 800px;
+    background-color: radial-gradient(white, #6f5964, #1b0b0f;
+}
+
+#bloque {
+    background-color: );
+}
+
+#main_content {
+    min-height: 919px;
+    width: 740px;
+    background-color: #4f3b44;
+}

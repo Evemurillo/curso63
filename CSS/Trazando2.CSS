@@ -9,11 +9,14 @@
     width: 950px;
     background-color: silver;
     margin: 0px auto;
+    padding: 15px;
+    height: 1000px;
 }
 
 #header {
     min-height: 150px;
     background-color: green;
+    margin-bottom: 15px;
 }
 
 #navigation {
@@ -22,7 +25,7 @@
     background-color: blue;
 }
 
-#main_content {
+/main_content {
     min-height: 400px;
     width: 700px;
     background-color: red;

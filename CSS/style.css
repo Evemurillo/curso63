@@ -1,0 +1,66 @@
+/*CSS reset settings here*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 950px;
+    background-color: silver;
+    margin: 0px auto;
+    padding: 15px;
+    height: 600px;
+}
+
+#header {
+    min-height: 150px;
+    background-color: green;
+    margin-bottom: 15px;
+}
+
+#navigation {
+    min-height: 300px;
+    width: 200px;
+    background-color: blue;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#main_content {
+    min-height: 400px;
+    width: 700px;
+    background-color: red;
+    display: inline-block;
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.subcontents {
+    height: 200px;
+    width: 215px;
+    background-color: yellow;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#advertisement {
+    min-height: 120px;
+    width: 683px;
+    background-color: purple;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    .sm-0 {
+        /* we will not display anything with the class .sm-0 if the screen's width is less than 480px */
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .med-1 {
+        /* anything with the class .med-1 will get 25% of the available width if the screen's width is greater than 480px */
+        width: 25%;
+    }
+}

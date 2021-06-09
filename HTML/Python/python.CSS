@@ -1,0 +1,186 @@
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #container {
+            background-color: #1a425e;
+            width: 970px;
+            height: 700px;
+            margin: opx auto;
+            color: white;
+        }
+        
+        #header img {
+            padding: 15px;
+            width: 300px;
+        }
+        
+        span {
+            color: black;
+        }
+        
+        #buscar a {
+            color: #cbad04;
+        }
+        
+        #buscar {
+            display: inline-block;
+            margin-left: 350px;
+            text-align: right;
+            vertical-align: top;
+            margin-top: 25px;
+        }
+        
+        #buscador {
+            width: 250px;
+            min-height: 45px;
+            border-radius: 10px;
+            background-color: #444444;
+            padding: 10px 10px 3px 2px;
+            margin-top: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        
+        #barraselector {
+            width: 885px;
+            min-height: 45px;
+            margin-top: 25px;
+            list-style: none;
+            background-color: #3e79ad;
+            border-radius: 5px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 25 px;
+            box-shadow: 2px 2px 2px black;
+        }
+        
+        #buscador input {
+            text-align: center;
+            padding: 5px;
+            border: 2px solid silver;
+            box-shadow: 1px 1px 1px 1px;
+        }
+        
+        #buscador button {
+            color: white;
+            text-align: center;
+            margin-left: 5px;
+            padding: 6px 8px;
+            border-radius: 5px;
+            background-color: #245176;
+            box-shadow: 1px 1px 1px black;
+        }
+        
+        #navegacion {
+            text-align: center;
+            display: inline-block;
+            color: white;
+            margin-left: 13px;
+        }
+        
+        #navegacion a {
+            color: white;
+        }
+        
+        #navegacion li {
+            margin: 13px;
+        }
+        
+        #contenido {
+            width: 590px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            margin-left: 100px;
+            padding-top: 10px;
+            font-size: large;
+        }
+        
+        #contenido p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        #contenido h3 {
+            font-weight: normal;
+            color: #cbad04;
+            font-style: italic;
+            margin: 5px;
+        }
+        
+        #contenido h4 {
+            font-weight: normal;
+            margin: 15px;
+        }
+        
+        #columnas {
+            width: 100%;
+            background-color: white;
+            display: inline-block;
+            vertical-align: center;
+            font-size: medium;
+            color: black;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 10px;
+        }
+        
+        #columnas div {
+            width: 400px;
+            border-top: 4px solid #73a7d5;
+            color: black;
+            text-align: center;
+        }
+        
+        #columans p {
+            font-size: 14px;
+            width: 100px;
+            margin: opx auto 5px auto;
+        }
+        
+        #columnas h4 {
+            margin: 10px;
+            font-size: 18px;
+        }
+        
+        #columnas span {
+            color: #88b4db;
+        }
+        
+        #columnas ul {
+            list-style: square;
+            margin-left: 30px;
+        }
+        
+        #columnas li a {
+            margin-left: -100px;
+            text-decoration: none;
+            color: #88b4db;
+            font-size: 14px;
+        }
+        
+        #footer {
+            text-align: center;
+            background: linear-gradient(#245176, #3374ab);
+            padding-top: 20px;
+        }
+        
+        #footer ul {
+            list-style: none;
+            margin: 20px auto 20px auto;
+            color: #88b4db;
+        }
+        
+        #footer li {
+            display: inline;
+            font-size: 18px;
+            margin: 30px;
+        }
+        
+        #footer p {
+            font-size: small;
+            color: #88b4db;
+            height: 20px;
+        }

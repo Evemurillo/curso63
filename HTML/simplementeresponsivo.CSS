@@ -1,38 +1,55 @@
-    * {
-        padding: 0px;
-        margin: 0px;
+/*CSS reset settings here*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    background-color: #b3b3b3;
+    border: 1px solid coral;
+    margin: 6px 0px;
+}
+
+.main {
+    background-color: #cccccc;
+    border: 1px solid coral;
+    margin-top: 6px;
+}
+
+#footer {
+    background-color: #ffff9a;
+    border: 1px solid coral;
+    margin-top: 6px;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+    .tablet {
+        display: none;
     }
-    
-    .header {
-        background-color: #b3b3b3;
-        border: 1px solid coral;
-        margin: 6px 0px;
+    .desktop {
+        display: none;
     }
-    
-    .main {
-        background-color: #cccccc;
-        border: 1px solid coral;
-        margin: 6px 0px;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .phone {
+        display: none;
     }
-    
-    #footer {
-        background-color: #ffff9a;
-        border: 1px solid coral;
-        margin: 6px 0px;
+    .desktop {
+        display: none;
     }
-    
-    span {
-        font-weight: bold;
+}
+
+@media only screen and (min-width: 1024px) {
+    .phone {
+        display: none;
     }
-    
-    @media only screen and (max-with: 480px) {
-        .desktop {
-            display: none;
-        }
+    .tablet {
+        display: none;
     }
-    
-    @media only screen and (min-width:481px) {
-        .phone {
-            display: none;
-        }
-    }
+}

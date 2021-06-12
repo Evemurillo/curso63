@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algotitmo 5</title>
+    <script>
+        /*ejercicio 1*/
+        /*Configura un array para que los valores negativos se transformen en 0. Por ejemplo, resetNegativos([1,2,-1,-3]) debiera dar como resultado [1,2,0,0].*/
+
+        function reemplazarNegativos(array) { //([1,2,-1,-3]) 
+            arr2 = []
+            for (var i = 0; i < x.length; i++) {
+                if (x[i] < 0) {
+                    arr2.push(0)
+                } else {
+                    arr2.push(x[i])
+                }
+            }
+            return arr2 //debiera dar como resultado [1,2,0,0]
+        }
+        var x = [1, 2, -1, -3]
+        console.log(reemplazarNegativos(x))
+
+        /*ejercicio 2*/
+        /*Dado un array, mueve todos los valores un espacio de derecha a izquierda eliminando el primer valor y dejando un 0 para el último valor. Por ejemplo, moverAdelante([1,2,3]) debiera dar como resultado [2,3,0].*/
+        function moverAdelante(array) { // ([1,2,3])
+            arr2 = []
+            for (var i = 1; i < x.length; i++) {
+                arr2.push(x[i])
+            }
+            arr2.push(0)
+            return arr2
+        }
+        var x = [1, 2, 3]
+        console.log(moverAdelante(x)) //debiera dar como resultado [2,3,0].
+
+        /* otra solución ejercicio 2*/
+        function moverAdelante(arr) {
+            for (i = 0; i < arr.length; i++) {
+                arr[i] = arr[i + 1];
+            }
+            arr[arr.length - 1] = 0;
+            console.log(arr);
+        }
+        moverAdelante([1, 2, 3]) //debiera dar como resultado [2,3,0].
+
+
+        /*ejercicio 3*/
+        /*Configura un array para que el resultado sean los valores en el orden contrario. Por ejemplo, returnReverso([1,2,3]) debe dar [3,2,1].*/
+
+        function returnReverso(array) { // ([1,2,3])
+            arr2 = []
+            for (var i = x.length - 1; i >= 0; i--) {
+                arr2.push(x[i])
+            }
+            return arr2
+        }
+        var x = [1, 2, 3]
+        console.log(returnReverso(x)) // debiera dar como resultado [3,2,1].
+
+
+
+        /* ejercicio 4*/
+        /*Crea una función que cambie un array repitiendo sus valores originales (manteniendo el mismo orden). Por ejemplo, repetirValores([4,”Ulysses”, 42, false]) debiera dar [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].*/
+        function repetirValores(arr) {
+            arr2 = []
+            for (var i = 0; i < x.length; i++) {
+                arr2.push(x[i]);
+                arr2.push(x[i])
+            }
+            return arr2
+        }
+        var x = [4, "Ulysses", 42, false]
+        console.log(repetirValores(x))
+
+        /* otro ejercicio 4*/
+        function repetirValores(arr) {
+            for (var i = arr.length - 1; i >= 0; i--) {
+                arr[2 * i + 1] = arr[i];
+                arr[2 * i] = arr[i];
+            }
+            return arr;
+        }
+        console.log(repetirValores([4, "Marcela", 42, false]));
+        // console.log(repetirValores([4, 4, "Marcela", "Marcela", 42, 42, false, false]));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

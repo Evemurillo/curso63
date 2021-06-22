@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //función click
+            $('#boton1').click(function() {
+                $('#parrafo1').text("click realizado en el botón"); //text(): cambia texto o captura el texto del elemento
+                $("#boton1").fadeIn("fast");
+                $("h1").css("color", "black").slideUp(2000).slideDown(2000);
+            });
+            //hide
+            $('#boton2').click(function() {
+                $('#parrafo2').hide(); //oculta el elemento
+            });
+            //show
+            $('#boton3').click(function() {
+                $('#parrafo3').show(); //mostrar
+            });
+            //toggle
+            $('#boton4').click(function() {
+                $('#parrafo2').toggle(); //mostrar
+            });
+            //Función append
+            $('#boton5').click(function() {
+                $('#parrafo5').append('<b> agrega texto al párrafo</b>');
+            });
+
+            $('#boton6').click(function() {
+                $('ol').append('<li>agrega un item a la lista</li>');
+            });
+            //Función before y after 
+            $('#boton7').click(function() { //antes de la imagen 
+                $('img').before('agrega antes'); // inserta la palabra en negrita
+            });
+            $('#boton8').click(function() {
+                $('img').after('agrega despues'); //inserta la palabra after con cursiva 
+            });
+            $('#boton9').click(function() {
+                $('.div1').fadeIn();
+                $('.div2').fadeIn('slow');
+                $('.div3').fadeIn(3000);
+            });
+            $('#boton10').click(function() {
+                $('.div1').fadeOut();
+                $('.div2').fadeOut('slow');
+                $('.div3').fadeOut(3000);
+            });
+            //addclass 
+            $('#parrafo3').click(function() {
+                $('#parrafo3').addClass('colorblue fondo mt-1');
+            });
+            //html: cambia el contenido del elemento, incluso puede agregar html
+            $('#parrafo4').click(function() {
+                $('#parrafo4').html("<span id=span1> texto cambia de color </span> <strong>de reemplazo</strong>");
+                $('#span1').addClass('colorblue');
+                $('#span1').attr('name', 'span1');
+            });
+
+            //fin jquery
+        });
+    </script>
+    <style>
+        .colorblue {
+            color: blue;
+        }
+        
+        .fondo {
+            background-color: rgb(37, 136, 103);
+        }
+        
+        #fadein {
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Función Click 1</h1>
+        <p id="parrafo1">clic en el botón para llamar al evento click</p>
+        <button id="boton1"> Click</button>
+        <hr>
+        <h1>Función Hide, Show y Toggle</h1>
+        <p id="parrafo2">clik en el botón para ocultar el parrafo</p>
+        <button id="boton2">Hide</button>
+        <button id="boton3">Show</button>
+        <button id="boton4">Toggle</button>
+        <hr>
+        <h1>Funcion Click 2</h1>
+        <p id="parrafo3">clic en el botón para llamar al evento click</p>
+        <hr>
+        <h1>HTML</h1>
+        <p id="parrafo4">reemplaza el contenido</p>
+        <hr>
+        <h1>Función append</h1>
+        <p id="parrafo5">Esto es un parrafo</p>
+        <p>Esto es otro parrafo</p>
+        <ol>
+            <li>Nómina 1</li>
+            <li>Nómina 2</li>
+            <li>Nómina 3</li>
+        </ol>
+        <button id="boton5">agrega texto</button>
+        <button id="boton6">agrega un elemento</button>
+        <hr>
+        <h1>Función before y after </h1>
+        <button id="boton7">Inserta before</button>
+        <img src="perro.jpg" alt="">
+        <button id="boton8">Inserta after </button>
+        <hr>
+        <div>
+            <div id="fadein y fadeOut">
+                <h1>Función fadeIn y fadeOut </h1>
+
+                <button id="boton9">Click aqui para ver fadeIn</button><br><br>
+                <div class="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+                <div class="div2" style="width:80px;height:80px;display:none;background-color: gray;"></div><br>
+                <div class="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+                <button id="boton10"> Click aqui para ver fadeout</button><br><br>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
